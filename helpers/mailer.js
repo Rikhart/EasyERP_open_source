@@ -208,7 +208,8 @@ module.exports = function () {
             email   : options.email,
             country : options.countryInput,
             city    : options.city,
-            host    : options.host
+            host    : options.host,
+            link    : options.link
         });
         var mailOptions = {
             from                : 'easyerp <no-replay@easyerp.com>',

@@ -186,7 +186,7 @@ HTTP/1.1 201 Created
       "id": 1468587887000
 }
      */
-    router.post('/', authStackMiddleware, accessStackMiddleware, handler.createProfile);
+    router.post('/',authStackMiddleware, accessStackMiddleware, handler.createProfile);
 
     /**
      * @api {put} /profiles/:id Request for updating Profile

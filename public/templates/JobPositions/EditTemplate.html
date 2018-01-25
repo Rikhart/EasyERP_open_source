@@ -1,9 +1,9 @@
 <div class="form-holder _newForm">
     <form method="post" action="" id="editJobPositionForm" class="form" data-id="<%=model._id%>">
-        <h4 class="_dialogTitlePositioned">Edit new job</h4>
+        <h4 class="_dialogTitlePositioned">Editar nuevo Trabajo</h4>
         <ul class="dialog-tabs">
-            <li><a class="active" href="javascript:;">Main</a></li>
-            <li><a href="javascript:;">Assignees</a></li>
+            <li><a class="active" href="javascript:;">Principal</a></li>
+            <li><a href="javascript:;">Asignados</a></li>
         </ul>
         <div class="dialog-tabs-items">
             <div class="dialog-tabs-item active">
@@ -17,10 +17,10 @@
                                    value="<%=model.name%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Job Name</label>
+                            <label class="_animate">Nombre del Trabajo</label>
                         </div>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Department</span>
+                            <span class="_selectTitle">Departamento</span>
                             <div class="_newSelectListWrap">
                                 <a class="current-selected"
                                    id="departmentDd"
@@ -31,7 +31,7 @@
                     </div>
                     <div class="_formBlock _equal">
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Expected in Recruitment</span>
+                            <span class="_staticLabel">Esperado en Reclutamiento</span>
                             <input type="text"
                                    name="expectedRecruitment"
                                    class="_animate onlyNumber"
@@ -40,7 +40,7 @@
                                    maxlength="4"/>
                         </div>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Stage</span>
+                            <span class="_selectTitle">Etapa</span>
                             <div class="_newSelectListWrap">
                                 <a id="workflowsDd"
                                    data-id="<%=(model.workflow) ? model.workflow._id : ''%>"
@@ -55,7 +55,7 @@
                                       required></textarea>
                             <label for="requirements" class="_animate"><%=model.requirements%></label>
                             <div class="counter-wrap">
-                                <span class="counter-label">Remainder:</span>
+                                <span class="counter-label">Recordatorio:</span>
                                 <span class="counter-value" id="counterValue">1000</span>
                             </div>
                         </div>

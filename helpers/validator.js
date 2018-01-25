@@ -99,6 +99,7 @@ function getValidProfileBody(body) {
     // why not && ?
     hasName = hasName ? validator.isLogin(body.profileName) : false;
 
+    console.log(hasName,"validation")
     return hasName;
 }
 

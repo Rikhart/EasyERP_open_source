@@ -536,10 +536,9 @@ define([
                     contentType: self.contentType
                 }).render().el
             );
-
             populate.get('#departmentManagers', 'departments/getForDd', {}, 'departmentManager', this);
             populate.get('#jobTypeDd', CONSTANTS.URLS.JOBPOSITIONS_JOBTYPE, {}, 'name', this, false);
-            populate.get('#nationality', CONSTANTS.URLS.EMPLOYEES_NATIONALITY, {}, '_id', this, true);
+            populate.get('#nationality', CONSTANTS.URLS.EMPLOYEES_NATIONALITY, {}, 'name', this, true);
             populate.get2name('#projectManagerDD', CONSTANTS.URLS.EMPLOYEES_PERSONSFORDD, {}, this, false);
             populate.get('#relatedUsersDd', CONSTANTS.URLS.USERS_FOR_DD, {}, 'login', this, true, true);
             populate.get('#departmentsDd', CONSTANTS.URLS.DEPARTMENTS_FORDD, {}, 'name', this, true, true);

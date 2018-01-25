@@ -1932,7 +1932,6 @@ var Employee = function (event, models) {
                 if (err) {
                     return next(err);
                 }
-
                 res.status(201).send({result: employee, id: employee._id});
             });
         }

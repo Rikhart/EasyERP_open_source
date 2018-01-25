@@ -15,6 +15,8 @@ var Profiles = function (models) {
         var err;
         var profile;
 
+        console.log(validator.validProfileBody(body),body)
+
         if (!validator.validProfileBody(body)) {
             err = new Error();
             err.status = 404;

@@ -1,21 +1,21 @@
 <div class="form-holder _newForm _employeeCreate">
     <form method="post" action="" id="createEmployeeForm">
-        <h4 class="_dialogTitlePositioned">Create Employee</h4>
+        <h4 class="_dialogTitlePositioned">Crear Empleados</h4>
         <ul class="dialog-tabs">
             <li>
-                <a href="javascript:;" class="active">Main</a>
+                <a href="javascript:;" class="active">Principal</a>
             </li>
             <li>
-                <a href="javascript:;" class="">Personal Information</a>
+                <a href="javascript:;" class="">Información Personal</a>
             </li>
             <li>
-                <a href="javascript:;" class="">Job</a>
+                <a href="javascript:;" class="">Trabajo</a>
             </li>
             <li>
-                <a href="javascript:;" class="">Notes</a>
+                <a href="javascript:;" class="">Notas</a>
             </li>
             <li>
-                <a href="javascript:;">Assignees</a>
+                <a href="javascript:;">Asignaciones</a>
             </li>
         </ul>
         <div class="dialog-tabs-items">
@@ -23,7 +23,7 @@
                 <div class="_formWrap">
                     <div class="_avatarBlock">
                         <div class="avatar">
-                            <div class="upload">Edit
+                            <div class="upload">Editar
                                 <input type="file"
                                        value="Edit"
                                        id="inputImg"
@@ -59,7 +59,7 @@
                                    autofocus
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">First Name</label>
+                            <label class="_animate">Nombres</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -67,10 +67,10 @@
                                    id="last"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Last Name</label>
+                            <label class="_animate">Apellidos</label>
                         </div>
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Date of Birth</span>
+                            <span class="_staticLabel" v-t="'empoyees-edittmp.dateofbirthin'">Fecha de Nacimiento</span>
                             <input type="text"
                                    name="dateBirth"
                                    class="_animate"
@@ -84,7 +84,7 @@
                                    id="mobile"
                                    required
                                    maxlength="20"/>
-                            <label class="_animate">Personal Mobile</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.pmobilein'">Telefono Personal</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -92,7 +92,7 @@
                                    id="personalEmail"
                                    required
                                    maxlength="48"/>
-                            <label class="_animate">Personal Email</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.personalemailin'">Correo electrónico personal</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -121,7 +121,7 @@
                             <label class="_animate">Facebook</label>
                         </div>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Source</span>
+                            <span class="_selectTitle" v-t="'empoyees-edittmp.sourcein'">Fuente</span>
                             <div class="_newSelectListWrap">
                                 <a id="sourceDd"
                                    class="current-selected"
@@ -135,7 +135,7 @@
                                    id="workEmail"
                                    required
                                    maxlength="48"/>
-                            <label class="_animate">Work Email</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.workemailin'">Correo electrónico del trabajo</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -143,10 +143,10 @@
                                    id="phone"
                                    required
                                    maxlength="20"/>
-                            <label class="_animate">Work Phone</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.workphonein'">Celular de Trabajo</label>
                         </div>
                         <div>
-                            <label>User Name</label>
+                            <label v-t="'empoyees-edittmp.username'">Usuario</label>
                             <span type="text"
                                   id="userName"></span>
                         </div>
@@ -171,10 +171,10 @@
             </div>
             <div class="dialog-tabs-item">
                 <div class="_formWrap">
-                    <h4 class="_titleBlueBorder">Citizenship &amp; Other Info</h4>
+                    <h4 class="_titleBlueBorder" v-t="'empoyees-edittmp.citizenshipandother'">Ciudadanía  &amp; Otra Información</h4>
                     <div class="_formBlock _equal">
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Nationality</span>
+                            <span class="_selectTitle" v-t="'empoyees-edittmp.nationalityin'">Nacionalidad</span>
                             <div class="_newSelectListWrap">
                                 <a id="nationality"
                                    data-id=""
@@ -189,7 +189,7 @@
                                    id="identNo"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Identification №</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.identificationin'">Identificación №</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -198,7 +198,7 @@
                                    id="passportNo"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Passport №</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.passportin'">Pasaporte №</label>
                         </div>
                     </div>
                     <div class="_formBlock _equal">
@@ -209,7 +209,7 @@
                                    id="bankAccountNo"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Bank Account №</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.bankaccountin'">Cuenta de Banco №</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -218,10 +218,10 @@
                                    id="otherId"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Other Id</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.otheridin'">Otro Id</label>
                         </div>
                     </div>
-                    <h4 class="_titleBlueBorder">Contact Information</h4>
+                    <h4 class="_titleBlueBorder" v-t="'empoyees-edittmp.contactinformation'">Información de Contacto</h4>
                     <div class="_formBlock _equal">
                         <div class="_animateInputBox">
                             <input type="text"
@@ -230,7 +230,7 @@
                                    id="employeeCreateStreet"
                                    required
                                    maxlength="60"/>
-                            <label class="_animate">Street</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.streetin'">Dirección</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -239,7 +239,7 @@
                                    id="employeeCreateCity"
                                    required
                                    maxlength="60"/>
-                            <label class="_animate">City</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.cityin'">Ciudad</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -248,7 +248,7 @@
                                    id="employeeCreateState"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">State</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.statein'">Distrito</label>
                         </div>
                     </div>
                     <div class="_formBlock _equal">
@@ -259,10 +259,10 @@
                                    id="employeeCreateZip"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Zip Code</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.zipcodein'">Código Postal</label>
                         </div>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Country</span>
+                            <span class="_selectTitle" v-t="'empoyees-edittmp.countryin'">Pais</span>
                             <div class="_newSelectListWrap">
                                 <a href="javascript:;"
                                    name="country homeAddress"
@@ -271,10 +271,10 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="_titleBlueBorder">Status</h4>
+                    <h4 class="_titleBlueBorder" v-t="'empoyees-edittmp.status'">Estado Actual</h4>
                     <div class="_formBlock _equal">
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Gender</span>
+                            <span class="_selectTitle" v-t="'empoyees-edittmp.genderin'">Género</span>
                             <div class="_newSelectListWrap">
                                 <a href="javascript:;"
                                    class="current-selected"
@@ -283,7 +283,7 @@
                             </div>
                         </div>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Employment type</span>
+                            <span class="_selectTitle" v-t="'empoyees-edittmp.employmenttypein'">Tipo De Trabajo</span>
                             <div class="_newSelectListWrap">
                                 <a href="javascript:;"
                                    class="current-selected"
@@ -294,7 +294,7 @@
                     </div>
                     <div class="_formBlock _equal">
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Marital status</span>
+                            <span class="_selectTitle" v-t="'empoyees-edittmp.maritalstatusin'">Estado Civil</span>
                             <div class="_newSelectListWrap">
                                 <a href="javascript:;"
                                    class="current-selected"
@@ -324,17 +324,17 @@
                             </colgroup>
                             <thead>
                             <tr>
-                                <th>Status</th>
-                                <th>Date</th>
-                                <th>Job position</th>
-                                <th>Department</th>
-                                <th>Manager</th>
-                                <th>Job Type</th>
-                                <th>Schedule</th>
-                                <th>Contract</th>
-                                <th>Scheduled Pay</th>
-                                <th>Salary</th>
-                                <th>Status info</th>
+                                <th v-t="'empoyees-edittmp.statush'">Estado</th>
+                                <th v-t="'empoyees-edittmp.dateh'">Fecha</th>
+                                <th v-t="'empoyees-edittmp.jobpositionh'">Posición de Trabajo</th>
+                                <th v-t="'empoyees-edittmp.departmenth'">Departamento</th>
+                                <th v-t="'empoyees-edittmp.managerh'">Director</th>
+                                <th v-t="'empoyees-edittmp.jobtypeh'">Tipo de Trabajo</th>
+                                <th v-t="'empoyees-edittmp.scheduleh'">Horario</th>
+                                <th v-t="'empoyees-edittmp.contracth'">Contrato</th>
+                                <th v-t="'empoyees-edittmp.scheduledpayh'">Pago Programado</th>
+                                <th v-t="'empoyees-edittmp.salaryh'">Salario</th>
+                                <th v-t="'empoyees-edittmp.statusinfoh'">Estado de la información</th>
                             </tr>
                             </thead>
                             <tbody>

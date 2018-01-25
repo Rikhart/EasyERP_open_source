@@ -40,6 +40,8 @@ define([
              dataService,
              changePasswordMixIn) {
     'use strict';
+    
+
     var EditView = ParentView.extend({
         el             : '#content-holder',
         contentType    : 'Employees',
@@ -1023,6 +1025,7 @@ define([
             this.renderAssignees(this.currentModel);
 
             this.renderRemoveBtn();
+            //aca es:
 
             common.getWorkflowContractEnd('Applications', null, null, CONSTANTS.URLS.WORKFLOWS, null, 'Contract End', function (workflow) {
                 self.$el.find('.endContractReasonList').attr('data-id', workflow[0]._id);
@@ -1030,14 +1033,28 @@ define([
             populate.get('#departmentManagers', CONSTANTS.URLS.DEPARTMENTS_FORDD, {}, 'departmentManager', this);
             populate.get('#weeklySchedulerDd', CONSTANTS.URLS.WEEKLYSCHEDULER, {}, 'name', this);
             populate.get('#jobTypeDd', CONSTANTS.URLS.JOBPOSITIONS_JOBTYPE, {}, 'name', this);
-            populate.get('#nationality', CONSTANTS.URLS.EMPLOYEES_NATIONALITY, {}, '_id', this);
+            populate.get('#nationality', CONSTANTS.URLS.EMPLOYEES_NATIONALITY, {}, 'name', this);
             populate.get2name('#projectManagerDD', CONSTANTS.URLS.EMPLOYEES_PERSONSFORDD, {}, this);
             populate.get('#relatedUsersDd', CONSTANTS.URLS.USERS_FOR_DD, {}, 'login', this, false, true);
             populate.get('#departmentsDd', CONSTANTS.URLS.DEPARTMENTS_FORDD, {}, 'name', this);
             populate.get('#payrollStructureTypeDd', CONSTANTS.URLS.PAYROLLSTRUCTURETYPES_FORDD, {}, 'name', this);
             populate.get('#scheduledPayDd', CONSTANTS.URLS.SCHEDULEDPAY_FORDD, {}, 'name', this);
             populate.get('#employeeEditCountry', CONSTANTS.URLS.COUNTRIES, {}, '_id', this);
-
+            
+            //Dico correcion temporal
+            var that=this;
+            dataService.getData(CONSTANTS.URLS.EMPLOYEES_NATIONALITY, {}, function(nationalities){
+                nationalities=nationalities.data;
+                if(that.model.attributes.nationality){
+                    for(var item of nationalities){
+                        if(item._id==that.model.attributes.nationality){
+                            $("#nationality").append(item.name);
+                            that.model.attributes.nationality=item;
+                        }
+                    }
+                }
+            });
+            //
             dataService.getData(CONSTANTS.URLS.JOBPOSITIONS_FORDD, {}, function (jobPositions) {
                 self.responseObj['#jobPositionDd'] = jobPositions.data;
             });

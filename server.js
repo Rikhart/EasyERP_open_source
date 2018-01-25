@@ -15,10 +15,14 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 require('./config/environment/' + process.env.NODE_ENV);
 
 connectOptions = {
-    db    : {native_parser: true},
-    server: {poolSize: 5},
-    w     : 1,
-    j     : true
+    db: {
+        native_parser: true
+    },
+    server: {
+        poolSize: 5
+    },
+    w: 1,
+    j: true
 };
 mainDb = mongoose.createConnection(process.env.MAIN_DB_HOST, process.env.MAIN_DB_NAME, process.env.DB_PORT, connectOptions);
 mainDb.on('error', function (err) {
@@ -43,13 +47,27 @@ mainDb.once('open', function callback() {
     require('./models/index.js');
 
     mainDBSchema = mongoose.Schema({
-        _id   : Number,
-        url   : {type: String, default: 'localhost'},
-        DBname: {type: String, default: ''},
-        pass  : {type: String, default: ''},
-        user  : {type: String, default: ''},
-        port  : Number
-    }, {collection: 'easyErpDBS'});
+        _id: Number,
+        url: {
+            type: String,
+            default: 'localhost'
+        },
+        DBname: {
+            type: String,
+            default: ''
+        },
+        pass: {
+            type: String,
+            default: ''
+        },
+        user: {
+            type: String,
+            default: ''
+        },
+        port: Number
+    }, {
+        collection: 'easyErpDBS'
+    });
 
     main = mainDb.model('easyErpDBS', mainDBSchema);
     main.find().exec(function (err, result) {
@@ -60,13 +78,17 @@ mainDb.once('open', function callback() {
         async.each(result, function (_db, eachCb) {
             var dbInfo = {
                 DBname: '',
-                url   : ''
+                url: ''
             };
             var opts = {
-                db    : {native_parser: true},
-                server: {poolSize: 5},
-                w     : 1,
-                j     : true
+                db: {
+                    native_parser: true
+                },
+                server: {
+                    poolSize: 5
+                },
+                w: 1,
+                j: true
             };
             var dbObject = mongoose.createConnection(_db.url, _db.DBname, _db.port, opts);
 
@@ -90,6 +112,50 @@ mainDb.once('open', function callback() {
             }
             app = require('./app')(mainDb, dbsNames);
 
+            //DICUS
+            var Natinality = dbsObject['CRM'].model('nationality');
+            // Natinality.remove(function(err,res){
+            //     console.log(err,res)
+            // });
+
+            Natinality.findOneAndUpdate({
+                name: "peruvian"
+            }, {
+                name: "peruvian"
+            }, {
+                upsert: true,
+                'new': true
+            }, function (err, res) {
+                console.log(res);
+            });
+
+            var Workflow = dbsObject['CRM'].model('workflows');
+            // Workflow.find((err,res)=>{
+            //     console.log(err,res,"respuesta")
+            // })
+
+            Workflow.findOneAndUpdate({
+                status: "In Progress",
+                wId: "DealTasks",
+                mid:39
+            }, {
+                    color: "#2C3E50",
+                    name: "To be discussed",
+                    sequence: 1,
+                    status: "In Progress",
+                    visible: true,
+                    wId: "DealTasks",
+                    mid:39
+            }, {
+                upsert: true,
+                'new': true
+            }, function (err, res) {
+                console.log(err,res);
+            });
+
+
+
+
             app.listen(port, function () {
                 var Scheduler = require('./services/scheduler')(models);
                 var scheduler = new Scheduler(dbsObject);
@@ -107,5 +173,3 @@ mainDb.once('open', function callback() {
 
     mainDb.mongoose = mongoose;
 });
-
-

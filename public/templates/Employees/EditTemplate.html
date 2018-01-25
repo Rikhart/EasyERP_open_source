@@ -1,21 +1,21 @@
 <div class="form-holder _newForm _employeeEdit">
     <form method="post" action="" id="editEmployeeForm" class="form editEmployeeForm">
-        <h4 class="_dialogTitlePositioned">Edit Employee</h4>
+        <h4 class="_dialogTitlePositioned" v-t="'empoyees-edittmp.dialogTitle'">Editar Empleados</h4>
         <ul class="dialog-tabs">
-            <li><a class="active" href="javascript:;">Main</a></li>
-            <li><a href="javascript:;">Personal Information</a></li>
-            <li><a href="javascript:;" id="jobTab">Job</a></li>
-            <li><a href="javascript:;" id="noteTab">Notes</a></li>
+            <li><a class="active" href="javascript:;">Principal</a></li>
+            <li><a href="javascript:;">Información Personal</a></li>
+            <li><a href="javascript:;" id="jobTab">Trabajo</a></li>
+            <li><a href="javascript:;" id="noteTab">Notas</a></li>
             <%if (!isForProfile) {%>
-            <li><a href="javascript:;">Assignees</a></li>
+            <li><a href="javascript:;">Asignaciones</a></li>
             <li class="right withEndContract _newSelectListWrap">
                 <span class="arrow"></span>
-                <span class="endContractReasonList">End Contract</span>
+                <span class="endContractReasonList">Finalizar Contrato</span>
                 <ul class="newSelectList">
-                    <li class="endContract">End Contract</li>
-                    <li class="endContract">Fired</li>
-                    <li class="endContract">Personal Issues</li>
-                    <li class="endContract">Other</li>
+                    <li class="endContract">Finalizar Contrato</li>
+                    <li class="endContract">Despedido</li>
+                    <li class="endContract">Asuntos Personales</li>
+                    <li class="endContract">Otros</li>
                 </ul>
             </li>
             <%};%>
@@ -25,8 +25,8 @@
                 <div class="_formWrap">
                     <div class="_avatarBlock">
                         <div class="avatar">
-                            <div class="upload">Edit
-                                <input type="file" value="Edit" id="inputImg">
+                            <div class="upload">Editar
+                                <input type="file" value="Editar" id="inputImg">
                             </div>
                             <canvas id="avatar"
                                     width="140"
@@ -48,7 +48,7 @@
                                    required
                                    value="<%=model.name.first%>"
                                    maxlength="32"/>
-                            <label class="_animate">First Name</label>
+                            <label class="_animate">Nombres</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -57,10 +57,10 @@
                                    value="<%=model.name.last%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Last Name</label>
+                            <label class="_animate">Apellidos</label>
                         </div>
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Date of Birth</span>
+                            <span class="_staticLabel">Fecha de Nacimiento</span>
                             <input type="text"
                                    name="dateBirth"
                                    class="_animate"
@@ -76,7 +76,7 @@
                                    value="<%=model.workPhones.mobile%>"
                                    required
                                    maxlength="20"/>
-                            <label class="_animate">Personal Mobile</label>
+                            <label class="_animate" v-t="'empoyees-edittmp.pmobilein'">Telefono Personal</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -85,7 +85,7 @@
                                    value="<%=model.personalEmail%>"
                                    required
                                    maxlength="48"/>
-                            <label class="_animate">Personal Email</label>
+                            <label class="_animate">Correo electrónico personal</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -117,7 +117,7 @@
                     </div>
                     <div class="_formBlock">
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Job Position</span>
+                            <span class="_staticLabel">Puesto de Trabajo</span>
                             <span class="_staticInfo"
                                   id="jobPosition"
                                   data-id="<%=model.jobPosition ? model.jobPosition._id: ''%>">
@@ -125,7 +125,7 @@
                             </span>
                         </div>
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Department</span>
+                            <span class="_staticLabel">Departamento</span>
                             <span class="_staticInfo"
                                   id="department"
                                   data-id="<%=model.department ? model.department._id: ''%>">
@@ -133,7 +133,7 @@
                             </span>
                         </div>
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Manager</span>
+                            <span class="_staticLabel">Director</span>
                             <span class="_staticInfo"
                                   id="manager"
                                   data-id="<%=model.manager ? model.manager._id: null%>">
@@ -141,7 +141,7 @@
                             </span>
                         </div>
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Job Type</span>
+                            <span class="_staticLabel">Tipo de trabajo</span>
                             <span class="_staticInfo"
                                   id="jobType"
                                   data-id="<%=model.jobType ? model.jobType: ''%>">
@@ -150,7 +150,7 @@
                         </div>
                         <% if (!isForProfile) { %>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Source</span>
+                            <span class="_selectTitle">Fuente</span>
                             <div class="_newSelectListWrap">
                                 <a id="sourceDd"
                                    class="current-selected"
@@ -167,7 +167,7 @@
                                    value="<%=model.workEmail%>"
                                    maxlength="48"
                                    required/>
-                            <label class="_animate">Work Email</label>
+                            <label class="_animate">Correo electrónico del trabajo</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -177,14 +177,14 @@
                                    value="<%=model.workPhones.phone%>"
                                    maxlength="32"
                                    required/>
-                            <label class="_animate">Work Phone</label>
+                            <label class="_animate">Celular de Trabajo</label>
                         </div>
                     </div>
                     <dl class="edit-employee-info">
 
                         <% if (isForProfile) { %>
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Timezone</span>
+                            <span class="_staticLabel">Zona Horaria</span>
                             <span class="_staticInfo"><%= timezone %></span>
                         </div>
                         <div class="_animateInputBox">
@@ -195,12 +195,12 @@
                                    data-content="user"
                                    data-type="input"
                                    required/>
-                            <label class="_animate">Username</label>
+                            <label class="_animate">Usuario</label>
                         </div>
                         <div class="_animateInputBox">
-                            <span class="_staticLabel">Password</span>
+                            <span class="_staticLabel">Contraseña</span>
                             <button id="changePassword" class="changePassword btn blue">
-                                <span>Change Password</span>
+                                <span>Cambiar Contraseña</span>
                             </button>
                         </div>
                         <%}%>
@@ -208,7 +208,7 @@
 
                     <div class="cropImages form" style="display:none;">
                         <div class="formTitle">
-                            <h3 class="left">Crop Images</h3>
+                            <h3 class="left">Cortar imagen</h3>
                         </div>
                         <div class="image_input" style="float: left;margin-right: 20px;"></div>
                         <img class="image_output"/>
@@ -217,15 +217,15 @@
             </div>
             <div class="dialog-tabs-item">
                 <div class="_formWrap">
-                    <h4 class="_titleBlueBorder">Citizenship &amp; Other Info</h4>
+                    <h4 class="_titleBlueBorder">Ciudadanía  &amp; Otra Información</h4>
                     <div class="_formBlock _equal">
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Nationality</span>
+                            <span class="_selectTitle">Nacionalidad</span>
                             <div class="_newSelectListWrap">
                                 <a id="nationality"
                                    data-id="<%=model.nationality?model.nationality:''%>"
                                    class="current-selected"
-                                   href="javascript:;"><%=model.nationality?(model.nationality):'Select'%></a>
+                                   href="javascript:;"><%=model.nationality?(model.nationality.name):'Select'%></a>
                             </div>
                         </div>
                         <div class="_animateInputBox">
@@ -236,7 +236,7 @@
                                    value="<%=model.identNo%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Identification №</label>
+                            <label class="_animate">Identificación №</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -246,7 +246,7 @@
                                    value="<%=model.passportNo%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Passport №</label>
+                            <label class="_animate">Pasaporte №</label>
                         </div>
                     </div>
                     <div class="_formBlock _equal">
@@ -258,7 +258,7 @@
                                    value="<%=model.bankAccountNo?model.bankAccountNo:''%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Bank Account №</label>
+                            <label class="_animate">Cuenta de Banco №</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -268,10 +268,10 @@
                                    value="<%=model.otherId%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Other Id</label>
+                            <label class="_animate">Otro ID</label>
                         </div>
                     </div>
-                    <h4 class="_titleBlueBorder">Contact Information</h4>
+                    <h4 class="_titleBlueBorder">Información de Contacto</h4>
                     <div class="_formBlock _equal">
                         <div class="_animateInputBox">
                             <input type="text"
@@ -281,7 +281,7 @@
                                    value="<%=model.homeAddress.street%>"
                                    required
                                    maxlength="60"/>
-                            <label class="_animate">Street</label>
+                            <label class="_animate">Dirección</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -291,7 +291,7 @@
                                    value="<%=model.homeAddress.city%>"
                                    required
                                    maxlength="60"/>
-                            <label class="_animate">City</label>
+                            <label class="_animate">Ciudad</label>
                         </div>
                         <div class="_animateInputBox">
                             <input type="text"
@@ -301,7 +301,7 @@
                                    value="<%=model.homeAddress.state%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">State</label>
+                            <label class="_animate">Distrito</label>
                         </div>
                     </div>
                     <div class="_formBlock _equal">
@@ -313,10 +313,10 @@
                                    value="<%=model.homeAddress.zip%>"
                                    required
                                    maxlength="32"/>
-                            <label class="_animate">Zip Code</label>
+                            <label class="_animate">Codigo Postal</label>
                         </div>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Country</span>
+                            <span class="_selectTitle">Pais</span>
                             <div class="_newSelectListWrap">
                                 <a href="javascript:;"
                                    name="country"
@@ -326,10 +326,10 @@
                             </div>
                         </div>
                     </div>
-                    <h4 class="_titleBlueBorder">Status</h4>
+                    <h4 class="_titleBlueBorder" v-t="'empoyees-edittmp.status'">Estado Actual</h4>
                     <div class="_formBlock _equal">
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Gender</span>
+                            <span class="_selectTitle">Género</span>
                             <div class="_newSelectListWrap">
                                 <a href="javascript:;"
                                    class="current-selected"
@@ -340,7 +340,7 @@
                             </div>
                         </div>
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Employment type</span>
+                            <span class="_selectTitle">Tipo De Trabajo</span>
                             <% if (isForProfile) {%>
                             <span class="_staticInfo"><%- model.employmentType ? (model.employmentType) : '' %></span>
                             <%} else {%>
@@ -357,7 +357,7 @@
                     </div>
                     <div class="_formBlock _equal">
                         <div class="_animateSelectBox">
-                            <span class="_selectTitle">Marital status</span>
+                            <span class="_selectTitle">Estado Civil</span>
                             <div class="_newSelectListWrap">
                                 <a href="javascript:;"
                                    class="current-selected"
@@ -395,19 +395,19 @@
                                 <% if (!isForProfile) { %>
                                 <th></th>
                                 <% }; %>
-                                <th>Status</th>
-                                <th>Date</th>
-                                <th>Job position</th>
-                                <th>Department</th>
-                                <th>Manager</th>
-                                <th>Job Type</th>
-                                <th>Schedule</th>
+                                <th>Estado</th>
+                                <th>Fecha</th>
+                                <th>Posición de Trabajo</th>
+                                <th>Departamento</th>
+                                <th>Director</th>
+                                <th>Tipo de Trabajo</th>
+                                <th>Horario</th>
                                 <th>Contract</th>
-                                <th>Scheduled Pay</th>
+                                <th>Pago programado</th>
                                 <%if (model.transfer[0].salary || model.transfer[0].salary === 0) {%>
-                                <th>Salary</th>
+                                <th>Salario</th>
                                 <% } %>
-                                <th>Status info</th>
+                                <th>Estado de la información</th>
                             </tr>
                             </thead>
                             <tbody id="transfersTable">
@@ -478,7 +478,7 @@
                         <% if (!isForProfile) { %>
                         <div class="ui-dialog-buttonset">
                             <% if (model.transfer.length && model.transfer[0].hasOwnProperty('salary')) {%>
-                            <a href="javascript:;" id="update" class="btn"><span>Add</span></a>
+                            <a href="javascript:;" id="update" class="btn"><span>Agregar</span></a>
                             <%}%>
                         </div>
                         <% }; %>
