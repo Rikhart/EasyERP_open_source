@@ -1,0 +1,1015 @@
+[{
+    "_id": "565ef6ba270f53d02ee71d65",
+    "name": "Invoice Journal",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0be0",
+    "debitAccount": "565eb53a6aa50532e5df0bc9",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2015-12-02T13:48:42.607Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "invoice",
+    "type": "",
+    "date": "2015-12-02T13:48:42.607Z"
+}, {
+    "_id": "56cc727e541812c07197356c",
+    "name": "Salary Payable",
+    "__v": 0,
+    "creditAccount": "56c4444eb81fd51e19207f3e",
+    "debitAccount": "565eb53a6aa50532e5df0bda",
+    "editedBy": {
+        "date": "2016-03-21T07:45:27.331Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-02-23T14:53:50.956Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-02-23T14:53:50.956Z"
+}, {
+    "_id": "56cc72a8541812c07197356e",
+    "name": "Vacations and Holidays",
+    "__v": 0,
+    "creditAccount": "56c4444eb81fd51e19207f3e",
+    "debitAccount": "56c9d4c7c3b88f6d64490fb4",
+    "editedBy": {
+        "date": "2016-03-21T09:32:47.966Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-02-23T14:54:32.803Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-02-23T14:54:32.803Z"
+}, {
+    "_id": "56cc72c4541812c071973570",
+    "name": "Salary Idle Time",
+    "__v": 0,
+    "creditAccount": "56c4444eb81fd51e19207f3e",
+    "debitAccount": "56cc6b62541812c071973569",
+    "editedBy": {
+        "date": "2016-03-21T09:32:47.966Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-02-23T14:55:00.702Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-02-23T14:55:00.702Z"
+}, {
+    "_id": "56cc734b541812c071973572",
+    "name": "Total Overhead",
+    "__v": 0,
+    "creditAccount": "56cc6bf2541812c07197356a",
+    "debitAccount": "565eb53a6aa50532e5df0bda",
+    "editedBy": {
+        "date": "2016-03-21T09:04:20.402Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-02-23T14:57:15.675Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-02-23T14:57:15.674Z"
+}, {
+    "_id": "56cc7383541812c071973574",
+    "name": "Salary Overtime ",
+    "__v": 0,
+    "creditAccount": "56c9d555c3b88f6d64490fb5",
+    "debitAccount": "565eb53a6aa50532e5df0bda",
+    "editedBy": {
+        "date": "2016-03-21T07:45:27.330Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-02-23T14:58:11.149Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-02-23T14:58:11.149Z"
+}, {
+    "_id": "56ebb636b2a906141f194fa5",
+    "name": "COGS",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd9",
+    "debitAccount": "565eb53a6aa50532e5df0be2",
+    "editedBy": {
+        "date": "2016-05-06T12:34:44.547Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-18T08:03:02.642Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-18T08:03:02.642Z"
+}, {
+    "_id": "56efc13cfd70ba6414bd3de7",
+    "name": "Close month / Vacation Ex",
+    "__v": 0,
+    "creditAccount": "56c9d4c7c3b88f6d64490fb4",
+    "debitAccount": "56cc6bf2541812c07197356a",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-21T09:39:08.977Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-21T09:39:08.976Z"
+}, {
+    "_id": "56efc15bfd70ba6414bd3de9",
+    "name": "Close month / Idle Ex",
+    "__v": 0,
+    "creditAccount": "56cc6b62541812c071973569",
+    "debitAccount": "56cc6bf2541812c07197356a",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-21T09:39:39.130Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-21T09:39:39.130Z"
+}, {
+    "_id": "56efc1affd70ba6414bd3deb",
+    "name": "Close Month / Admin Salary Exp",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bed",
+    "debitAccount": "56cc6bf2541812c07197356a",
+    "editedBy": {
+        "date": "2016-03-28T11:19:45.456Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-21T09:41:03.770Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-21T09:41:03.770Z"
+}, {
+    "_id": "56f243d9574610102546a33a",
+    "name": "Payment Cash USD",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bd2",
+    "editedBy": {
+        "date": "2016-07-08T12:00:53.497Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-23T07:20:57.302Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-03-23T07:20:57.302Z"
+}, {
+    "_id": "56f28cb517d856740da4c8d7",
+    "name": "Salary Payment Journal",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd2",
+    "debitAccount": "56c4444eb81fd51e19207f3e",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-23T12:31:49.148Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-03-23T12:31:49.148Z"
+}, {
+    "_id": "56f2a96f58dfeeac4be1582a",
+    "name": "Finished Goods",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bda",
+    "debitAccount": "565eb53a6aa50532e5df0bd9",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-23T14:34:23.641Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-23T14:34:23.640Z"
+}, {
+    "_id": "56f3fac93fb451104c75a477",
+    "name": "Admin Salary Expenses",
+    "__v": 0,
+    "creditAccount": "56c4444eb81fd51e19207f3e",
+    "debitAccount": "565eb53a6aa50532e5df0bed",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-24T14:33:45.978Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-24T14:33:45.978Z"
+}, {
+    "_id": "56f5383a9c85020807b40020",
+    "name": "Income Summary Journal",
+    "__v": 0,
+    "creditAccount": "56f538149c85020807b4001f",
+    "debitAccount": "565eb53a6aa50532e5df0be0",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-25T13:08:10.069Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-25T13:08:10.067Z"
+}, {
+    "_id": "56f538679c85020807b40022",
+    "name": "Close COGS",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0be2",
+    "debitAccount": "56f538149c85020807b4001f",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-25T13:08:55.090Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-25T13:08:55.090Z"
+}, {
+    "_id": "56f538c39c85020807b40024",
+    "name": "Retained Earnings Journal",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bf3",
+    "debitAccount": "56f538149c85020807b4001f",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-25T13:10:27.320Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-25T13:10:27.320Z"
+}, {
+    "_id": "56f90e8d8cea58642c57f442",
+    "name": "Close month / Admin expenses",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bf1",
+    "debitAccount": "56cc6bf2541812c07197356a",
+    "editedBy": {
+        "date": "2016-05-06T12:56:15.940Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-03-28T10:59:25.489Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2016-03-28T10:59:25.488Z"
+}, {
+    "_id": "57035e4321f9b0c4313d4146",
+    "name": "Proforma Journal",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bdb",
+    "debitAccount": "565eb53a6aa50532e5df0bd2",
+    "editedBy": {
+        "date": "2016-04-08T10:44:46.088Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-04-05T06:42:11.108Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "invoice",
+    "type": "",
+    "date": "2016-04-05T06:42:11.108Z"
+}, {
+    "_id": "57035ffd21f9b0c4313d414e",
+    "name": "Adjustment before invoice",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bdb",
+    "editedBy": {
+        "date": "2016-05-25T06:54:18.523Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-04-05T06:49:33.333Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "invoice",
+    "type": "",
+    "date": "2016-04-05T06:49:33.333Z"
+}, {
+    "_id": "572340e28ba4fd133006271e",
+    "name": "Expenses Invoice Journal",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bdc",
+    "debitAccount": "565eb53a6aa50532e5df0bf1",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-05-06T06:01:49.000Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "invoice",
+    "type": "",
+    "date": "2016-05-06T06:01:49.000Z"
+}, {
+    "_id": "572341608ba4fd1330062720",
+    "name": "Expenses Invoice Payments",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd2",
+    "debitAccount": "565eb53a6aa50532e5df0bdc",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-05-06T06:01:49.000Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-05-06T06:01:49.000Z"
+}, {
+    "_id": "572347d78ba4fd1330062726",
+    "name": "Dividend Invoice Journal",
+    "__v": 0,
+    "creditAccount": "572346da8ba4fd1330062723",
+    "debitAccount": "565eb53a6aa50532e5df0bf3",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-05-06T06:01:49.000Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "invoice",
+    "type": "",
+    "date": "2016-05-06T06:01:49.000Z"
+}, {
+    "_id": "572348048ba4fd1330062728",
+    "name": "Dividend Invoice Payment",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd2",
+    "debitAccount": "572346da8ba4fd1330062723",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-05-06T06:01:49.000Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-05-06T06:01:49.000Z"
+}, {
+    "_id": "57767a427134263421caa841",
+    "name": "Write off / Overhead",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd9",
+    "debitAccount": "577679ee832a51132161e03a",
+    "editedBy": {
+        "date": "2016-08-10T15:19:28.339Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-01T14:12:18.020Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "writeoff",
+    "type": "",
+    "date": "2016-07-01T14:12:18.020Z"
+}, {
+    "_id": "57767be5ca7bd4d021041d34",
+    "name": "Write off / R&D",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd9",
+    "debitAccount": "57767b99ca7bd4d021041d32",
+    "editedBy": {
+        "date": "2016-08-10T15:19:28.337Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-01T14:19:17.025Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "writeoff",
+    "type": "",
+    "date": "2016-07-01T14:19:17.024Z"
+}, {
+    "_id": "577f962bce02eeb33ee901d1",
+    "name": "Payment USB USD TM",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bcb",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:01:47.630Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:01:47.630Z"
+}, {
+    "_id": "577f9653b3d4447f3fafd422",
+    "name": "Payment USB UAH TM",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bcd",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:02:27.029Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:02:27.029Z"
+}, {
+    "_id": "577f966bd72226643fc862fb",
+    "name": "Payment USB EUR TM",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bcc",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:02:51.680Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:02:51.680Z"
+}, {
+    "_id": "577f968f4b90ec163f270f19",
+    "name": "Payment USB USD YTS",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bce",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:03:27.946Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:03:27.946Z"
+}, {
+    "_id": "577f96a885d53fd43eda3086",
+    "name": "Payment USB UAH YTS",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bcf",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:03:52.449Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:03:52.449Z"
+}, {
+    "_id": "577f96cbfe0b3b983ea04614",
+    "name": "Payment Erste EUR",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bd6",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:04:27.340Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:04:27.340Z"
+}, {
+    "_id": "577f96f8d72226643fc862fc",
+    "name": "Payment UCB USD",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bd1",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:05:12.707Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:05:12.707Z"
+}, {
+    "_id": "577f97104b90ec163f270f1a",
+    "name": "Payment Cash UAH",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bd3",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:05:36.759Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:05:36.758Z"
+}, {
+    "_id": "577f9850fe0b3b983ea04615",
+    "name": "Payment Privat USD",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "577f98244b90ec163f270f1b",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:10:56.897Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:10:56.897Z"
+}, {
+    "_id": "577f9864d72226643fc862fd",
+    "name": "Payment Privat EUR",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "577f983b5dc67c373fced537",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-08T12:11:16.121Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-08T12:11:16.121Z"
+}, {
+    "_id": "5788b4572bfddc9a494cce0a",
+    "name": "Invoice Purchase",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bdc",
+    "debitAccount": "58073e4e49519eac0c535a08",
+    "editedBy": {
+        "date": "2017-01-26T12:41:15.525Z",
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-15T10:00:55.504Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "invoice",
+    "type": "",
+    "date": "2016-07-15T10:00:55.504Z"
+}, {
+    "_id": "5788b46fba20d66849c45b90",
+    "name": "Purchase Payment",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd2",
+    "debitAccount": "565eb53a6aa50532e5df0bdc",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-07-15T10:01:19.531Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-07-15T10:01:19.531Z"
+}, {
+    "_id": "578fb9f00e93d4b0b39474c8",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "577f983b5dc67c373fced537",
+    "debitAccount": "565eb53a6aa50532e5df0bd5",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.271Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.270Z"
+}, {
+    "_id": "57907bc6b4b1bb7e016dd684",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": null,
+    "debitAccount": "565eb53a6aa50532e5df0bd5",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.273Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.273Z"
+}, {
+    "_id": "579a065184cd4e6076f24156",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd5",
+    "debitAccount": "565eb53a6aa50532e5df0bcb",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.274Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.274Z"
+}, {
+    "_id": "579a068d84cd4e6076f24157",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bcc",
+    "debitAccount": "565eb53a6aa50532e5df0bd5",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.274Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.274Z"
+}, {
+    "_id": "579a06d684cd4e6076f24158",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd5",
+    "debitAccount": "565eb53a6aa50532e5df0bcc",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.275Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.275Z"
+}, {
+    "_id": "579a195c84cd4e6076f24159",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "577f98244b90ec163f270f1b",
+    "debitAccount": "565eb53a6aa50532e5df0bd5",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.276Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.275Z"
+}, {
+    "_id": "57b4063b3d442aa2b1db4b68",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd5",
+    "debitAccount": "577f983b5dc67c373fced537",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.278Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.278Z"
+}, {
+    "_id": "57d64232c843791ce9357cc9",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd5",
+    "debitAccount": "565eb53a6aa50532e5df0bd2",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.278Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.278Z"
+}, {
+    "_id": "57e914493d3d9c1f20db78c0",
+    "name": "Payment Erste USD",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bc9",
+    "debitAccount": "565eb53a6aa50532e5df0bca",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2016-09-26T12:27:53.494Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2016-09-26T12:27:53.493Z"
+}, {
+    "_id": "581c44939c5a35a820768d9e",
+    "name": "Other Income / Loss",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bd5",
+    "debitAccount": null,
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-15T10:11:47.280Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "payment",
+    "type": "",
+    "date": "2017-02-15T10:11:47.280Z"
+}, {
+    "_id": "589c9effe660d67d0f216ef5",
+    "name": "Close Sales Returns",
+    "__v": 0,
+    "creditAccount": "589c9cdde660d67d0f216ef4",
+    "debitAccount": "565eb53a6aa50532e5df0be0",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-09T16:55:27.985Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "accrual",
+    "type": "",
+    "date": "2017-02-09T16:55:27.985Z"
+}, {
+    "_id": "589d7f8b5c8be0bc4e830cbf",
+    "name": "Invoice Purchase",
+    "__v": 0,
+    "creditAccount": "565eb53a6aa50532e5df0bdc",
+    "debitAccount": "58073e4e49519eac0c535a08",
+    "editedBy": {
+        "user": null
+    },
+    "createdBy": {
+        "date": "2017-02-10T08:53:31.349Z",
+        "user": null
+    },
+    "description": "",
+    "currency": {
+        "name": "USD"
+    },
+    "transaction": "invoice",
+    "type": "",
+    "date": "2017-02-10T08:53:31.349Z"
+}]

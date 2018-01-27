@@ -1,0 +1,17 @@
+[{
+    "_id": "Email",
+    "sequence": 0,
+    "name": "Email"
+}, {
+    "_id": "Newsletter",
+    "sequence": 1,
+    "name": "Newsletter"
+}, {
+    "_id": "Telesales",
+    "sequence": 2,
+    "name": "Telesales"
+}, {
+    "_id": "Web",
+    "sequence": 3,
+    "name": "Web"
+}]

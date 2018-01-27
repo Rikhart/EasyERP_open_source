@@ -1,0 +1,13 @@
+[{
+    "_id": "USD",
+    "active": true,
+    "decPlace": 2,
+    "symbol": "$",
+    "name": "USD"
+}, {
+    "_id": "EUR",
+    "active": true,
+    "decPlace": 2,
+    "symbol": "€",
+    "name": "EUR"
+}]

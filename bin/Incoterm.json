@@ -1,0 +1,61 @@
+[{
+    "_id": "55537115475b7be475f335fb",
+    "code": "EXW",
+    "name": "EX WORKS"
+}, {
+    "_id": "55537115475b7be475f335fc",
+    "code": "FCA",
+    "name": "FREE CARRIER"
+}, {
+    "_id": "55537115475b7be475f335fd",
+    "code": "FAS",
+    "name": "FREE ALONGSIDE SHIP"
+}, {
+    "_id": "55537115475b7be475f335fe",
+    "code": "FOB",
+    "name": "FREE ON BOARD"
+}, {
+    "_id": "55537115475b7be475f335ff",
+    "code": "CFR",
+    "name": "COST AND FREIGHT"
+}, {
+    "_id": "55537115475b7be475f33600",
+    "code": "CIF",
+    "name": "COST, INSURANCE AND FREIGHT"
+}, {
+    "_id": "55537115475b7be475f33601",
+    "code": "CPT",
+    "name": "CARRIAGE PAID TO"
+}, {
+    "_id": "55537115475b7be475f33602",
+    "code": "CIP",
+    "name": "CARRIAGE AND INSURANCE PAID TO"
+}, {
+    "_id": "55537115475b7be475f33603",
+    "code": "DAF",
+    "name": "DELIVERED AT FRONTIER"
+}, {
+    "_id": "55537115475b7be475f33604",
+    "code": "DES",
+    "name": "DELIVERED EX SHIP"
+}, {
+    "_id": "55537115475b7be475f33605",
+    "code": "DEQ",
+    "name": "DELIVERED EX QUAY"
+}, {
+    "_id": "55537115475b7be475f33606",
+    "code": "DDU",
+    "name": "DELIVERED DUTY UNPAID"
+}, {
+    "_id": "55537115475b7be475f33607",
+    "code": "DAT",
+    "name": "DELIVERED AT TERMINAL"
+}, {
+    "_id": "55537115475b7be475f33608",
+    "code": "DAP",
+    "name": "DELIVERED AT PLACE"
+}, {
+    "_id": "55537115475b7be475f33609",
+    "code": "DDP",
+    "name": "DELIVERED DUTY PAID"
+}]

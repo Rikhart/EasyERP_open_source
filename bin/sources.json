@@ -1,0 +1,55 @@
+[{
+    "_id": "Outbound",
+    "name": "Outbound",
+    "sequence": 0,
+    "__v": 0
+}, {
+    "_id": "Web Organic",
+    "name": "Web Organic",
+    "sequence": 2,
+    "__v": 0
+}, {
+    "_id": "Web referral",
+    "name": "Web referral",
+    "sequence": 3,
+    "__v": 0
+}, {
+    "_id": "Nets",
+    "name": "Nets",
+    "sequence": 4,
+    "__v": 0
+}, {
+    "_id": "Partners",
+    "name": "Partners",
+    "sequence": 5,
+    "__v": 0
+}, {
+    "_id": "Offline Meetings",
+    "name": "Offline Meetings",
+    "sequence": 1,
+    "__v": 0
+}, {
+    "_id": "Crowdmarketing",
+    "name": "Crowdmarketing"
+}, {
+    "_id": "Professional Sites",
+    "name": "Professional Sites"
+}, {
+    "_id": "Social Media",
+    "name": "Social Media"
+}, {
+    "_id": "Outbound Cold Call",
+    "name": "Outbound Cold Call"
+}, {
+    "_id": "Outbound Marketing Mailing",
+    "name": "Outbound Marketing Mailing"
+}, {
+    "_id": "Outbound Job Search",
+    "name": "Outbound Job Search"
+}, {
+    "_id": "Outbound LinkedIn",
+    "name": "Outbound LinkedIn"
+}, {
+    "_id": "Web ERP",
+    "name": "Web ERP"
+}]

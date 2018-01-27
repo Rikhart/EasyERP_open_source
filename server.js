@@ -8,6 +8,7 @@ var dbsNames = {};
 var connectOptions;
 var mainDb;
 var app;
+const fs = require('fs-extra')
 
 require('pmx').init();
 
@@ -71,6 +72,23 @@ mainDb.once('open', function callback() {
 
     main = mainDb.model('easyErpDBS', mainDBSchema);
     main.find().exec(function (err, result) {
+        var result = [{
+                "_id": 3,
+                "url": "localhost",
+                "DBname": "saas",
+                "user": "easyErp",
+                "pass": "1q2w3e!@#",
+                "port": 27017
+            },
+            {
+                "_id": 4,
+                "url": "localhost",
+                "DBname": "CRM",
+                "user": "",
+                "pass": "",
+                "port": 27017
+            }
+        ]
         if (err) {
             process.exit(1, err);
         }
@@ -114,6 +132,7 @@ mainDb.once('open', function callback() {
 
             //DICUS
             var Natinality = dbsObject['CRM'].model('nationality');
+            var CurrencyStore=dbsObject['saas'].model('CurrencyStore')
             // Natinality.remove(function(err,res){
             //     console.log(err,res)
             // });
@@ -137,21 +156,32 @@ mainDb.once('open', function callback() {
             Workflow.findOneAndUpdate({
                 status: "In Progress",
                 wId: "DealTasks",
-                mid:39
+                mid: 39
             }, {
-                    color: "#2C3E50",
-                    name: "To be discussed",
-                    sequence: 1,
-                    status: "In Progress",
-                    visible: true,
-                    wId: "DealTasks",
-                    mid:39
+                color: "#2C3E50",
+                name: "To be discussed",
+                sequence: 1,
+                status: "In Progress",
+                visible: true,
+                wId: "DealTasks",
+                mid: 39
             }, {
                 upsert: true,
                 'new': true
             }, function (err, res) {
-                console.log(err,res);
+                console.log(err, res);
             });
+
+            CurrencyStore.find().then(res => {
+                var file = './bin/CurrencyStore.json'
+                // fs.writeJson(file, res, err => {
+                //     if (err) return console.error(err)
+                //     console.log('success!')
+                // })
+            })
+
+
+
 
 
 

@@ -111,6 +111,7 @@ var Module = function (models) {
             .findByIdAndUpdate(id, {$set: {recentDate: new Date()}}, {new: true})
             .populate('charts')
             .exec(function (err, dashboard) {
+                if(!dashboard) return res.status(200).send()
                 var newCharts = [];
 
                 if (err) {

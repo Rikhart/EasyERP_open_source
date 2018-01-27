@@ -1,0 +1,25 @@
+[{
+    "_id": "contract",
+    "attachments": [],
+    "name": "Contract"
+}, {
+    "_id": "fullTime",
+    "attachments": [],
+    "name": "Full-time"
+}, {
+    "_id": "internship",
+    "attachments": [],
+    "name": "Internship"
+}, {
+    "_id": "partTime",
+    "attachments": [],
+    "name": "Part-time"
+}, {
+    "_id": "remote",
+    "attachments": [],
+    "name": "Remote"
+}, {
+    "_id": "temporary",
+    "attachments": [],
+    "name": "Temporary"
+}]
